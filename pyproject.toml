@@ -1,3 +1,4 @@
+# Sample pyproject.toml for computecanada-setup
 [project]
 name = "computecanada-setup"
 version = "0.1.0"
@@ -5,3 +6,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+# Add these to your pyproject.toml. to use Compue Canada's wheelhouse. 
+[tool.uv]
+# Use Compute Canada's wheelhouse first
+find-links = [
+    "/cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic",
+    # "/cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2",
+    "/cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx512",
+]
