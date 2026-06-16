@@ -14,10 +14,11 @@ To install binaries, the best way I have found is to:
 3. find a packaged release for AMD 64 since we're on x64 linux.
 4. download usually as a .tar.gz or .zip using curl
    1. `curl -LO <release_url>` curl the release you found by right click copy url for that package.
-   2. `tar -xzfv <file>.tar.gz` to uncompress .tar.gz
-   3. `unzip <file>.zip` to unzip
-5. go into that package and find the binary. This is sometimes locatined in `bin`.
-6. copy that to your ~/.local/bin
+   2. if tar.gz`tar -xzfv <file>.tar.gz` to uncompress .tar.gz
+   3. if zip: `unzip <file>.zip` to unzip
+   4. for other compressed formats look online.
+5. go into that package and find the binary. This is sometimes located in `bin`.
+6. copy that to your ~/.local/bin and now it should be on your _Path_ (meaning you can always call that command by typing it in the terminal)
 7. Thats it. Now you can access your program from the terminal as you normally would.
 
 Use `gh auth login` to login to git so you can clone repos and push code.
